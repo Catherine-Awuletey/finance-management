@@ -721,6 +721,50 @@ select {
   border-color: var(--accent);
 }
 
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 2.6rem;
+  box-sizing: border-box;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0.45rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.password-toggle:hover,
+.password-toggle:focus-visible {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+}
+
+.password-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.password-toggle svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
 .auth-message { font-size: 0.85rem; margin: 0; }
 .auth-message.error { color: var(--expense); }
 .auth-message.success { color: var(--revenue); }
